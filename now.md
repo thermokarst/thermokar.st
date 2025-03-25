@@ -8,6 +8,7 @@
 
 ### gaming
 
+- Lords of the Fallen (PC)
 - Elden Ring (PC)
 
 ### music
