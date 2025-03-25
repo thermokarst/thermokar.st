@@ -8,11 +8,12 @@ RUN apt-get update && apt-get install -y \
 
 RUN mkdir -p /app/markdown
 
-COPY *.md /app/markdown
-COPY *.md /usr/share/nginx/html
 COPY template.html /app/markdown
 
 COPY default.conf /etc/nginx/conf.d
+
+COPY *.md /app/markdown
+COPY *.md /usr/share/nginx/html
 
 RUN for md_file in /app/markdown/*.md; do \
     if [ -f "$md_file" ]; then \
