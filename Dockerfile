@@ -20,7 +20,7 @@ RUN for md_file in /app/markdown/*.md; do \
         filename=$(basename -- "$md_file"); \
         name="${filename%.*}"; \
         echo "Converting $filename to $name.html"; \
-        pandoc "$md_file" -o "/usr/share/nginx/html/$name.html" \
+        pandoc "$md_file" --variable date="$(date +"%Y-%m-%dT%H:%M:%S%z")" -o "/usr/share/nginx/html/$name.html" \
         --template=/app/markdown/template.html \
         --standalone; \
     fi; \
