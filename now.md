@@ -10,6 +10,7 @@
 
 - Lords of the Fallen (PC)
 - Elden Ring (PC)
+- The Legend of Zelda: The Minish Cap (RG35XX)
 
 ### music
 
